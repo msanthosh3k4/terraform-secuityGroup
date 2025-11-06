@@ -1,5 +1,5 @@
 resource "aws_security_group" "main" {
-  name   = "${var.project_name}-${var.environment}"
+  name   = "${var.project_name}-${var.environment}-${var.sg_name}"
   vpc_id = var.vpc_id #aws_vpc.example.id
   description = var.sg_description
   egress {
